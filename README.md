@@ -1,12 +1,13 @@
 # Haiku Generator
 
-A Python-based project that generates haikus using two different approaches: Recurrent Neural Networks (RNN) and Markov Models.
+A Python-based project that generates haikus using three different approaches: Recurrent Neural Networks (RNN), Markov Models, and GPT-2.
 
 ## Overview
 
-This project explores two different methods for generating haikus:
+This project explores three different methods for generating haikus:
 1. **RNN-based Generator**: Uses a Recurrent Neural Network to learn patterns from existing haikus and generate new ones
 2. **Markov Model Generator**: Uses Markov chains to generate haikus based on word transition probabilities
+3. **GPT-2 Generator**: Utilizes the powerful GPT-2 language model fine-tuned on haiku data to generate creative and coherent haikus
 
 ## Requirements
 
@@ -18,6 +19,7 @@ This project explores two different methods for generating haikus:
   - numpy>=1.21.0
   - gensim>=4.0.0
   - scikit-learn>=0.24.0
+  - transformers>=4.0.0 (for GPT-2)
 
 ## Installation
 
@@ -36,6 +38,6 @@ pip install -r requirements.txt
 
 - `RNN/`: Contains the Recurrent Neural Network implementation
 - `Markov Model/`: Contains the Markov Model implementation
+- `GPT-2/`: Contains the GPT-2 implementation and training notebook
 - `all_haiku.csv`: Dataset of haikus used for training
 - `requirements.txt`: List of Python dependencies
-
